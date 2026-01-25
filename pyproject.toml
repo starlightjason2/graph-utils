@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "graph-utils"
+version = "0.1.0"
+description = "Python wrapper for matplotlib and scipy"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Jason Jain", email = "starlightjason2@gmail.com"}
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Visualization",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+keywords = ["graph", "plotting", "matplotlib", "scipy", "visualization", "data-analysis"]
+dependencies = [
+    "matplotlib>=3.5.0",
+    "numpy>=1.21.0",
+    "scipy>=1.7.0",
+]
+
+[project.urls]
+Homepage = "https://github.com"
+Repository = "https://github.com"
+Issues = "https://github.com/issues"
+
+[tool.setuptools]
+# Automatically discover packages
+packages = {find = {}}
